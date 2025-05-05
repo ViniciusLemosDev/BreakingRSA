@@ -39,14 +39,14 @@ A saída mostrará a senha simétrica derivada dos blocos RSA.
 Exemplo de saída esperada:
 
 ```bash
-Senha simétrica AES-256: minhaSenha123
+Senha simétrica AES-256: STD16
 ```
 
 ## 🔓 Decifrar o arquivo criptografado
 Depois de obter a senha, use o comando abaixo para decifrar o arquivo .enc usando o OpenSSL:
 
 ```bash
-openssl aes-256-cbc -d -a -in break_me.enc -out break_me_dec.pdf -k minhaSenha123
+openssl aes-256-cbc -d -a -in break_me.enc -out break_me_dec.pdf -k STD16
 ```
 
 ## 🔐 Observações
